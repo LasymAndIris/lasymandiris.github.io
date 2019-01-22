@@ -75,7 +75,7 @@ ul li.active a{
 	font-size: 40px;
 }
 
-.button{
+div.button{
 	position: absolute;
 	top: 70%;
 	left: 50%;
@@ -107,12 +107,10 @@ a.download_button{
 	text-decoration: none;
 	background-color: #00aa37;
 	color: #fff;
-	padding: 5px 20px;
 	border: 1px solid transparent;
+	padding: 5px 20px;
 	transition: 0.6s ease;
-	float: right;
-	vertical-align: middle;
-	height: 10vh;
+	text-align: center;
 }
 
 a.download_button:hover{
@@ -122,8 +120,31 @@ a.download_button:hover{
 
 table {
 	width: 100vw;
+	border: 1px;
 }
 
 table thead{
 	background-color: blue;
+	color: white;
+}
+
+tr{
+	height: 60px;
+}
+
+table tbody tr th{
+	color: black;
+	background-color: white;
+}
+
+tr th.name{
+	width: 20%;
+}
+
+tr th.description{
+	width: 60%;
+}
+
+tr th.button{
+	width: 20%;
 }
