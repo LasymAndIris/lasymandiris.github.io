@@ -11,6 +11,13 @@ header{
 	background-position: center;
 }
 
+header.tools{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Resources/Images/background.jpg);
+	height: 50vh;
+	background-size: cover;
+	background-position: center;
+}
+
 ul{
 	float: right;
 	list-style-type: none;
@@ -47,6 +54,7 @@ ul li.active a{
 
 .main{
 	max-width: 1200px;
+	max-height: 500px;
 	margin: auto;
 }
 
@@ -60,6 +68,11 @@ ul li.active a{
 .title h1{
 	color: #fff;
 	font-size: 70px;
+}
+
+.title h2{
+	color: #fff;
+	font-size: 40px;
 }
 
 .button{
@@ -82,6 +95,35 @@ ul li.active a{
 	color: #000;
 }
 
-div.program h1{
+body.default_body{
+	background-color: #c6c6c6;
+}
+
+div.programs{
+	background-color: #c6c6c6;
+}
+
+a.download_button{
+	text-decoration: none;
+	background-color: #00aa37;
 	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+	float: right;
+	vertical-align: middle;
+	height: 10vh;
+}
+
+a.download_button:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+table {
+	width: 100vw;
+}
+
+table thead{
+	background-color: blue;
 }
