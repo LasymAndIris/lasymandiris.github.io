@@ -11,13 +11,6 @@ header{
 	background-position: center;
 }
 
-header.tools{
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Resources/Images/background.jpg);
-	height: 50vh;
-	background-size: cover;
-	background-position: center;
-}
-
 ul{
 	float: right;
 	list-style-type: none;
@@ -116,35 +109,4 @@ a.download_button{
 a.download_button:hover{
 	background-color: #fff;
 	color: #000;
-}
-
-table {
-	width: 100vw;
-	border: 1px;
-}
-
-table thead{
-	background-color: blue;
-	color: white;
-}
-
-tr{
-	height: 60px;
-}
-
-table tbody tr th{
-	color: black;
-	background-color: white;
-}
-
-tr th.name{
-	width: 20%;
-}
-
-tr th.description{
-	width: 60%;
-}
-
-tr th.button{
-	width: 20%;
 }
