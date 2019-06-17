@@ -1,3 +1,0 @@
-Tâche progressive
-1.0.0.0
-Une tâche avec une date limite (facultative), un titre, une description, une sorte de répétition mais aussi et surtout un progrès en pourcentage
