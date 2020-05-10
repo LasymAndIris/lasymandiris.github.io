@@ -1,0 +1,17 @@
+@media only screen and (min-width: 1280px) {
+
+    div.name {
+        width:20vw;
+        height:100%;
+        font-size: 2.5em;
+        display: table-cell;
+        vertical-align: middle;
+        align-content: center;
+        text-align: left;
+    }
+
+    div.menu-button {
+        width:12vh;
+    }
+
+}
