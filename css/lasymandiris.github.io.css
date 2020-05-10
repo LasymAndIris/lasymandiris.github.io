@@ -1,0 +1,69 @@
+/*Page*/
+div.page{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../Resources/Images/background.jpg);
+}
+/*Fin de page*/
+
+/*Menu*/
+.menu {
+    height:20vh;
+}
+
+table.menu {
+    border-radius: 20px;
+    background-color: #28363b;
+    width:61vw;
+    margin-left:19vw;
+    padding:1vw;
+}
+
+td.logo img {
+    height:20vh;
+}
+
+td.name {
+    display:none;
+}
+
+@media only screen and (min-width: 1800px) {
+
+    td.name {
+        display:table-cell;
+        vertical-align:middle;
+        font-size:60px;
+        width:calc(29vw - 20vh);
+    }
+}
+
+td.menu_button {
+    width:10vw;
+}
+
+button.menu_button {
+    width:100%;
+    height:100%;
+    border:none;
+    background-color: inherit;
+    transition: 0.05s;
+}
+
+button.menu_button:hover {
+    background-color: #252f33;
+}
+
+button.menu_button:active {
+    background-color: #6b838c;
+}
+
+button.last-button {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/*Fin du menu*/
+
+/*Contenu*/
+div.content {
+    height:100vh;
+    width:99vw;
+}
+/*Fin du contenu*/
