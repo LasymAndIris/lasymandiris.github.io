@@ -1,12 +1,59 @@
+<!DOCTYPE html>
+
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Lasym and Iris</title>
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/lasymandiris.github.io-from0to879.css">
-        <link rel="stylesheet" href="css/lasymandiris.github.io-from880.css">
-        <link rel="stylesheet" href="css/lasymandiris.github.io-from1280.css">
         <link rel="icon" href="Resources/flavicon.ico">
     </head>
+        <script>
+            if (navigator.appVersion.indexOf("Android")!=-1) {
+                loadForMobile();
+            }
+            else {
+                loadForDesktop();
+            }
+
+
+
+            function loadForDesktop() {
+                var head = document.getElementsByTagName('head')[0];
+
+                var link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.href="css/reset.css";
+                head.appendChild(link);
+
+                link = document.createElement('link');
+                link.rel='stylesheet';
+                link.href='css/lasymandiris-mobile.css';
+                head.appendChild(link);
+
+                link = document.createElement('link');
+                link.rel='stylesheet';
+                link.href='css/lasymandiris-desktop-medium.css';
+                head.appendChild(link);
+
+                link = document.createElement('link');
+                link.rel='stylesheet';
+                link.href="css/lasymandiris-desktop-large.css";
+                head.appendChild(link);
+            }
+
+            function loadForMobile() {
+                var head = document.getElementsByTagName('head')[0];
+
+                var link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.href="css/reset.css";
+                head.appendChild(link);
+
+                link = document.createElement('link');
+                link.rel='stylesheet';
+                link.href='css/lasymandiris-mobile.css';
+                head.appendChild(link);
+            }
+        </script>
     <body>
         <div class="page">
             <div class="menu">
