@@ -13,5 +13,5 @@ function getText(url){
     }
 }
 
-var text = getText('file:///D:/Lasym/Programmation/GitHub/Website/lasymandiris.github.io/test.json');
+var text = getText('https://lasymandiris.github.io/test.json');
 console.log(text);
