@@ -1,53 +1,73 @@
-/*Menu*/
-.menu {
-    height:20vh;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+
+.carousel {
+  height:50vh;
 }
 
-table.menu {
-    border-radius: 20px;
-    background-color: #28363b;
-    width:61vw;
-    margin-left:19vw;
-    padding:1vw;
+.carousel-inner {
+  height:inherit;
 }
 
-td.logo img {
-    height:20vh;
-}
-
-td.name {
-    display:none;
-}
-
-td.menu_button {
-    width:10vw;
-}
-
-button.menu_button {
-    width:100%;
+.carousel-inner img {
     height:100%;
-    border:none;
-    background-color: inherit;
-    transition: 0.05s;
+    width:fit-content;
 }
 
-button.menu_button:hover {
-    background-color: #252f33;
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
 }
 
-button.menu_button:active {
-    background-color: #6b838c;
-}
 
-button.last-button {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
 }
-/*Fin du menu*/
-
-/*Contenu*/
-div.content {
-    height:80vh;
-    width:99vw;
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
 }
-/*Fin du contenu*/
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}

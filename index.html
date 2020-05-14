@@ -1,29 +1,82 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Lasym And Iris</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="icon" href="Resources/flavicon.ico">
-	</head>
-	<body>
-		<header>
-			<div class="main">
-				<div class="logo">
-					<img src="Resources/Images/logo.png">
-				</div>
-				<ul>
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="tools.html">Tools</a></li>
-					<li><a href="about.html">About</a></li>
-				</ul>
-			</div>
-			<div class="title">
-				<h1>Lasym And Iris</h1>
-			</div>
+    <head lang="en">
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Lasym and Iris</title>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <script src="player.js"></script>
+        <link rel="stylesheet" href="css/lasymandiris.github.io.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">
+                    <img src="Resources/Images/logo.png">
+                    Lasym and Iris
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tools.html">
+                                Tools
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">
+                                About
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-			<div class="button">
-				<a href="tools.html" class="btn">Télécharger des petits programmes</a>
-				<a href="about.html" class="btn">À propos</a>
-			</div>
-		</header>
-	</body>
+        <div id="slides" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators dark">
+                <li class="active" data-target="#slides" data-slide-to="0"></li>
+                <li data-target="#slides" data-slide-to="1"></li>
+                <li data-target="#slides" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Resources/Images/background1.png">
+                </div>
+                <div class="carousel-item">
+                    <img src="Resources/Images/background2.png">
+                </div>
+                <div class="carousel-item">
+                    <img src="Resources/Images/background3.png">
+                </div>
+            </div>
+        </div>
+
+        <audio src="Resources/Audios/audio1.mp3"></audio>
+        <div class="player">
+            <img />
+            <div class="info">
+                <div class="name">All of me</div>
+                <div class="singer">John Legend</div>
+            </div>
+            <div class="btns">
+                <div class="iconfont play-pause icon-play"></div>
+                <div class="iconfont next icon-next"></div>
+            </div>
+            <div class="progress">
+
+            </div>
+        </div>
+    </body>
 </html>
